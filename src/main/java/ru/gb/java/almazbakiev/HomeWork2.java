@@ -2,11 +2,11 @@ package ru.gb.java.almazbakiev;
 
 public class HomeWork2 {
     public static void main(String[] args) {
-        System.out.println(addingTwoNumbers(9, 11));
+        System.out.println(addingTwoNumbers(4, 11));
         positiveOrNegativeNumber(0);
         System.out.println(isNegative(5));
-        printString(3, "Home work");
-        System.out.println(leapYear(123));
+        printString(3, "Home work!");
+        System.out.println(leapYear(2000));
     }
 
     // First task
@@ -39,19 +39,18 @@ public class HomeWork2 {
 
     // Fourth task
     public static void printString(int iterationCounter, String text) {
-        while (iterationCounter != 0 && iterationCounter > 0) {
+        for (int i = 0; i < iterationCounter; i++) {
             System.out.println(text);
-            iterationCounter--;
         }
     }
 
     // Fifth task
     public static boolean leapYear(int year) {
-        if ((year %= 400) == 0) {
+        if (year % 400 == 0) {
             return true;
-        } else if ((year %= 100) == 0) {
+        } else if (year % 100 == 0) {
             return false;
-        } else if ((year %= 4) == 0) {
+        } else if (year % 4 == 0) {
             return true;
         } else {
             return false;
