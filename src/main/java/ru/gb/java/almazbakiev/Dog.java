@@ -3,31 +3,15 @@ package ru.gb.java.almazbakiev;
 public class Dog extends Animal {
 
     private static int amountDog;
+    final static int RUN_LIMIT = 500;
+    final static int SWIM_LIMIT = 10;
 
-    public Dog(String name) {
-        super(name);
+    public Dog(String name, int appetite) {
+        super(name, RUN_LIMIT, SWIM_LIMIT, appetite);
         amountDog++;
     }
 
     public static int getAmountDog() {
         return amountDog;
-    }
-
-    public void run(int lengthObstacle) {
-        final int RUN = 500;
-        if (lengthObstacle > RUN) {
-            System.out.println(getName() + " не может пробежать больше " + RUN + " м.");
-        } else {
-            System.out.println(getName() + " пробежал " + lengthObstacle + " м.");
-        }
-    }
-
-    public void swim(int lengthObstacle) {
-        final int SWIM = 10;
-        if (lengthObstacle > SWIM) {
-            System.out.println(getName() + " не может проплыть больше " + SWIM + " м.");
-        } else {
-            System.out.println(getName() + " проплыл " + lengthObstacle + " м.");
-        }
     }
 }

@@ -3,18 +3,24 @@ package ru.gb.java.almazbakiev;
 public class HomeWork6 {
     public static void main(String[] args) {
 
-        Cat cat1 = new Cat("Барсик");
-        Cat cat2 = new Cat("Мася");
-        Cat cat3 = new Cat("Белла");
-        Dog dog1 = new Dog("Шарик");
-        Dog dog2 = new Dog("Дружок");
-        Dog dog3 = new Dog("Марс");
-        Dog dog4 = new Dog("Леон");
+        Animal[] animals = {
+                new Cat("Лео", 30),
+                new Cat("Лиса", 27),
+                new Cat("Луна", 22),
+                new Cat("Мася", 25),
+                new Dog("Лаки", 73),
+                new Dog("Дружок", 90),
+                new Dog("Шарик", 100)
+        };
 
-        cat1.run(150);
-        cat1.swim(20);
-        dog1.run(600);
-        dog1.swim(5);
+        Plate plateForAllAnimals = new Plate(200);
+        for (Animal animal : animals) {
+            animal.eat(plateForAllAnimals);
+            plateForAllAnimals.info();
+        }
+
+        plateForAllAnimals.addFood(100);
+        plateForAllAnimals.info();
 
         System.out.println("Колличество созданных котов: " + Cat.getAmountCat() + ".");
         System.out.println("Колличество созданных собак: " + Dog.getAmountDog() + ".");
