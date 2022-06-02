@@ -2,14 +2,14 @@ package ru.gb.javalvl2.almazbakiev;
 
 import java.util.Scanner;
 
-public class Array {
+public class CreateArray {
 
     private final int ROWS_AND_COLS_CONST = 4;
     private int rows;
     private int cols;
     private int sumRowsAndCols;
 
-    public Array(int rows, int cols) {
+    public CreateArray(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
     }
