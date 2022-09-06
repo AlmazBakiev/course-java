@@ -11,7 +11,7 @@ public class Solution {
             return null;
         }
         if (array.length == 0) {
-            throw new EmptyArrayException("В качестве аргумента нужно передать не пустой одномерный целочисленный массив");
+            throw new EmptyArrayException("Р’ РєР°С‡РµСЃС‚РІРµ Р°СЂРіСѓРјРµРЅС‚Р° РЅСѓР¶РЅРѕ РїРµСЂРµРґР°С‚СЊ РЅРµ РїСѓСЃС‚РѕР№ РѕРґРЅРѕРјРµСЂРЅС‹Р№ С†РµР»РѕС‡РёСЃР»РµРЅРЅС‹Р№ РјР°СЃСЃРёРІ");
         }
         for (int i = array.length - 1; i >= 0; i--) {
             if (array[i] == 4) {
@@ -22,7 +22,7 @@ public class Solution {
                 return newArray;
             }
         }
-        throw new RuntimeException("Входной массив должен содержать хотя бы одну четверку");
+        throw new RuntimeException("Р’С…РѕРґРЅРѕР№ РјР°СЃСЃРёРІ РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ С…РѕС‚СЏ Р±С‹ РѕРґРЅСѓ С‡РµС‚РІРµСЂРєСѓ");
     }
 
     public static boolean hasArrayNumberOneAndFour(int[] array) {
