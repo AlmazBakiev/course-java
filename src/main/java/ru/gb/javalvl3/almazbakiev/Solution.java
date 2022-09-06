@@ -4,17 +4,6 @@ public class Solution {
 
     public static void main(String[] args) {
 
-//        int[] arr1 = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
-//        int[] arr2 = new int[]{2, 3, 4, 5, 6, 7, 8};
-        int[] arr3 = new int[]{2, 3, 4, 5, 6, 7, 1};
-//        int[] arr4 = new int[5];
-//        int[] arr5 = new int[]{4, 1, 1, 1, 1};
-
-//        System.out.println(hasArrayNumberOneAndFour(arr1));
-//        System.out.println(hasArrayNumberOneAndFour(arr2));
-        System.out.println(hasArrayNumberOneAndFour(arr3));
-//        System.out.println(hasArrayNumberOneAndFour(arr4));
-//        System.out.println(hasArrayNumberOneAndFour(arr5));
     }
 
     public static int[] returnNewArray(int[] array) {
